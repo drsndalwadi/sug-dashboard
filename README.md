@@ -15,8 +15,6 @@ To start a local development server, run:
 ng serve
 ```
 
-Will be available at ```localhost:4200 ```
-
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
 ## Installed Dependencies:
@@ -27,11 +25,13 @@ Once the server is running, open your browser and navigate to `http://localhost:
 - "tailwindcss": "^3.4.19"
 
 ## To generate components:
+```bash 
 ng g c sug-icon
 ng g c sug-page-title
 ng g c sug-sidenav
 ng g c sug-header
 ng g c sug-advertisement
+```
 
 Total components: 5
 =======================
@@ -43,9 +43,7 @@ Total components: 5
 
 
 ## Icon Component
-==============================
-## Properties
-
+- Properties of Icon components
 ```ts
 interface IconProps {
   title: string;            // Icon/Menu title
@@ -58,30 +56,29 @@ interface IconProps {
 ```
 
 ## To invoke Icon component
+```bash
 <sug-icon [icon]="house" [color]="#f58b1d" [navigation_link]="#" [size]="3rem"> </sug-icon>
-
+```
 
 
 ## SideNavBar Component
-==============================
-## To invoke sidebar component
+- To invoke sidebar component
+```bash
 <sug-left-nav [iconLinks]="navIconsList" [create_disabled]="create_disabled"> </sug-left-nav>
 iconLinks = array of icon object (metadata)
 create_disabled = to enable or disable create/plus icon
-
+```
 
 ## Page-title Component
-==============================
 - Accepts page title and sub_title as input value
-## To invoke Page-Title component
+- To invoke Page-Title component
+```bash
 <sug-page-title [page_title]="title" [page_sub_title]="sub_title"> </sug-page-title>
-
+```
 
 
 ## Funnel Card Component
-==============================
-# Properties
-## Card Interface
+- Properties of Card Interface
 
 ```ts
 interface CardProps {
@@ -93,13 +90,15 @@ interface CardProps {
 ```
 
 ## To invoke Funnel Card component
+```bash
 <sug-funnel-card 
     [image]="imageurl" [title]="TITLE" 
     [desc]="Description" [navigation_url]="Navigation_URL">
 </sug-funnel-card>
+```
 
 
-==============================
 ## Advertisement Component
+```bash
 <sug-adverts></sug-adverts>
-
+```
