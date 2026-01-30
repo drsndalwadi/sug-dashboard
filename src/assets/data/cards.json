@@ -1,0 +1,50 @@
+[
+    {
+      "imageurl":"assets/images/signup.png",
+      "title": "Sign Up",
+      "description": "Organize events and volunteers in minutes",
+      "navigation_url": "#"
+    },
+    {
+      "imageurl":"assets/images/fess.jpg",
+      "title": "Fees and Registrations",
+      "description": "Collect dues, fees, registration forms, and more",
+      "navigation_url": "#"
+    },
+    {
+      "imageurl":"assets/images/forms_vaiver.jpg",
+      "title": "Form or Waiver",
+      "description": "Beautiful online forms and waivers for your group",
+      "navigation_url": "#"
+    },
+    {
+      "imageurl":"assets/images/onlinestore.jpg",
+      "title": "Online Store",
+      "description": "Move merch with e-commerce tools to help you sell more",
+      "navigation_url": "#"
+    },
+    {
+      "imageurl":"assets/images/group_gift.jpg",
+      "title": "Group Gift",
+      "description": "Instant tracking and the option to send gift cards makes life easy",
+      "navigation_url": "#"
+    },
+    {
+      "imageurl":"assets/images/ticketed_event.jpg",
+      "title": "Ticketed Event",
+      "description": "Enjoy quick and easy mobile ticketing check-ins",
+      "navigation_url": "#"
+    },
+    {
+      "imageurl":"assets/images/athon_fundraiser.jpg",
+      "title": "\"Athon\" Fundraiser",
+      "description": "Launch a peer-to-peer fundraiser to raise money the fun way",
+      "navigation_url": "#"
+    },
+    {
+      "imageurl":"assets/images/fundraiser.jpg",
+      "title": "Fundraiser",
+      "description": "Raise money traditionally to support any cause",
+      "navigation_url": "#"
+    }
+  ]

@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Home",
+    "icon": "house",
+    "navigation_link": "#"
+  },
+  {
+    "title": "Groups",
+    "icon": "users",
+    "navigation_link": "#"
+  },
+  {
+    "title": "Messages",
+    "icon": "envelope-open-text",
+    "navigation_link": "#"
+  },
+  {
+    "title": "Reports",
+    "icon": "chart-pie",
+    "navigation_link": "#"
+  },
+  {
+    "title": "Setting",
+    "icon": "screwdriver-wrench",
+    "navigation_link": "#"
+  }
+]

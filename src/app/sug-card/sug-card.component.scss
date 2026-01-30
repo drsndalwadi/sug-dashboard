@@ -1,0 +1,21 @@
+:host {
+  display: block;
+   width: 100%;
+}
+
+.card-cover { 
+  @apply p-3 text-center flex justify-center;
+}
+
+.card-img {
+  @apply mx-auto -mb-4 h-16 w-16;
+}
+
+.card-title {
+  @apply text-lg mb-2 font-black text-[#272727];
+}
+
+.card-content {
+  @apply text-[#272727] font-normal text-base;
+}
+

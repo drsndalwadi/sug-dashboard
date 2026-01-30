@@ -1,0 +1,27 @@
+.container-cols {
+    @apply grid grid-cols-12 gap-4 mt-3;
+}
+
+.sidebar-cols {
+    @apply hidden sm:block col-start-2 justify-items-end;
+}
+
+.content-cols {
+    @apply md:col-span-9 xl:col-span-8 sm:col-start-3 sm:col-end-12 col-start-2 col-end-12 mb-3;
+}
+
+.main-content {
+   @apply bg-white rounded-2xl shadow-sm p-6 sm:p-8;
+}
+
+.grid-classes {
+    @apply grid gap-4;
+}
+
+.card-cols-2 {
+    @apply grid grid-cols-1 md:grid-cols-2 mb-4 gap-4;
+}
+
+.card-cols-3 {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-4;
+}

@@ -1,0 +1,10 @@
+.sidebar-item {
+  @apply flex flex-col items-center py-1.5 my-1 rounded-xl
+         transition-colors duration-200;
+}
+.icon-title {
+    @apply text-xs font-bold text-[#222222];
+}
+.sidebar-menu{
+    @apply hidden sm:block col-start-2 justify-items-end;
+}

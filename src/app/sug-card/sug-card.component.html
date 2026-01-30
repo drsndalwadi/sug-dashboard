@@ -1,0 +1,18 @@
+
+<!-- Main Content / Funnel Card -->
+<div class="card-cover">
+    <a [href]="navigation_url()">
+        <p-card [style]="{ boxShadow: 'none'}">
+
+            <ng-template #header>
+                <img class="card-img" [src]="image()" alt="card-image">
+            </ng-template>
+
+            <ng-template #content>
+                <h3 class="card-title lato-font"> {{title()}} </h3>
+
+                <p class="card-content"> {{desc()}} </p>
+            </ng-template>
+        </p-card>
+    </a>
+</div>

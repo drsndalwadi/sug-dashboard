@@ -1,0 +1,14 @@
+// Inside dashboard.ts to get data from json
+
+// cards = signal<FunnelCard[]>([]);
+
+  // navIconsList = signal<NavBarIcon[]>([]);
+
+  // constructor(private http: HttpClient) {
+  //   this.http.get<NavBarIcon[]>('assets/data/icons.json')
+  //     .subscribe((data) => this.navIconsList.set(data));
+
+  //   this.http.get<FunnelCard[]>('assets/data/cards.json')
+  //     .subscribe(data => this.cards.set(data));
+  // }
+  

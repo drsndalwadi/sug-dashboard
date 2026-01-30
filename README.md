@@ -12,48 +12,79 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## Installed Dependencies:
+- "@fortawesome/fontawesome-free": "^7.1.0" (Free version)
+- "@primeng/themes": "^19.1.4"
+- "primeng": "^19.1.4"
+- "postcss": "^8.5.6"
+- "tailwindcss": "^3.4.19"
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## To generate components:
+ng g c sug-icon
+ng g c sug-page-title
+ng g c sug-sidenav
+ng g c sug-header
+ng g c sug-advertisement
 
-```bash
-ng generate component component-name
-```
+==============================
+Total components: 5
+==============================
+1) Icon Component
+2) SideNavBar Component
+3) Page-title Component
+4) Funnel Card Component
+5) Advertisement Component
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+==============================
+## Icon Component
+==============================
+# Properties
+title:string,       	    // Icon/Menu title
+icon:string,   	            // Name of the (FA) icon
+navigation_link:string,   	// Where do you want to redirect on click
+size?:string,  	            // Optional - As default size is 2rem (u can give size in REM or PX)
+color?:string  	            // Optional - As default color is green (#75862A)
+isDisabled?:boolean,        // Optional - As it is not required for each icon
 
-```bash
-ng generate --help
-```
+## To invoke Icon component
+<sug-icon [icon]="house" [color]="#f58b1d" [navigation_link]="#" [size]="3rem"> </sug-icon>
 
-## Building
 
-To build the project run:
+==============================
+## SideNavBar Component
+==============================
+## To invoke sidebar component
+<sug-left-nav [iconLinks]="navIconsList" [create_disabled]="create_disabled"> </sug-left-nav>
+iconLinks = array of icon object (metadata)
+create_disabled = to enable or disable create/plus icon
 
-```bash
-ng build
-```
+==============================
+## Page-title Component
+==============================
+- Accepts page title and sub_title as input value
+## To invoke Page-Title component
+<sug-page-title [page_title]="title" [page_sub_title]="sub_title"> </sug-page-title>
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+==============================
+## Funnel Card Component
+==============================
+# Properties
+imageurl: string,			// Card Image URL
+title:string,				// Card title
+description:string,		    // Description / text
+navigation_url:string		// Redirection URL when clicked
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## To invoke Funnel Card component
+<sug-funnel-card 
+    [image]="imageurl" [title]="TITLE" 
+    [desc]="Description" [navigation_url]="Navigation_URL">
+</sug-funnel-card>
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
+==============================
+## Advertisement Component
+==============================
+## To invoke Advertisement component
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+<sug-adverts> </sug-adverts>

@@ -1,0 +1,47 @@
+<!-- Sidebar -->
+<aside class="sidebar-menu">
+    <div class="bg-white rounded-2xl shadow-sm p-2">
+        <!-- For Create/Plus Icon -->
+        <div class="sidebar-item"
+            [ngClass]="{
+                'hidden': !displayCreateIcon(),
+                'cursor-not-allowed': create_disabled(),
+                'cursor-pointer': !create_disabled(),
+                'hover:bg-[#e3eac1]' : !create_disabled()
+                }">
+            
+            <sug-icon
+                [icon]="createIcon.icon"
+                [color]="create_disabled() ? '#BCBEC0' : '#f58b1d'"
+                [class.opacity-50]="create_disabled()">
+            </sug-icon>
+        
+            <span class="icon-title">{{createIcon.title}}</span>
+        </div>
+        
+        <!-- For all other sidebar Icons -->
+        @for (iconObj of iconLinks(); track iconObj.title) {
+            <a [href]="iconObj.navigation_link">
+                <div class="sidebar-item"
+                    (click)="!iconObj.isDisabled && selectedIcon.set(iconObj)"
+                    [ngClass]="{
+                        'cursor-not-allowed': iconObj.isDisabled,
+                        'cursor-pointer': !iconObj.isDisabled,
+                        'bg-[#e3eac1]': selectedIcon() === iconObj,
+                        'hover:bg-[#e3eac1]' :  !iconObj.isDisabled}">
+                    
+                    <div class="text-2xl">
+                        <sug-icon
+                            [icon]="iconObj.icon"
+                            [size]="iconObj.size"
+                            [color]="getIconColor(iconObj)">
+                        </sug-icon>
+                    </div>
+                    
+                    <span class="icon-title">{{iconObj.title}}</span>
+                </div>
+            </a>
+        }
+        
+    </div>
+</aside>

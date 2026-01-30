@@ -1,0 +1,55 @@
+<!-- Static Top Header -->
+<app-sug-header></app-sug-header>
+
+<!-- For Upper/Top advertisment -->
+<sug-adverts></sug-adverts>
+
+<div class="container-cols">
+    
+    <!-- Side Nav Bar -->
+    <div class="sidebar-cols">
+        <sug-left-nav [iconLinks]="navIconsList" [create_disabled]="create_disabled"> </sug-left-nav>
+    </div>
+    
+    <!-- Main Content / Funnel Card Section - START -->
+    <main class="content-cols">
+        <div class="main-content">
+
+            <!-- Page-Title Component -->
+            <sug-page-title [title]="title" [sub_title]="sub_title"> </sug-page-title>
+            
+            <!-- Card section First 2 cards -->
+            <!-- From <768px cards arranged in vertical manner -->
+            <div class="grid-classes md:grid-cols-2 mb-4">
+                @for (card of cards.slice(0, 2); track $index) {
+                    <div class="feature-card card-shadow rounded-xl">
+                        <sug-funnel-card
+                            [image]="card.imageurl"
+                            [title]="card.title"
+                            [desc]="card.description"
+                            [navigation_url]="card.navigation_url">
+                        </sug-funnel-card>
+                    </div>
+                }
+            </div>
+
+            <!-- Card section second and third row -->
+            <div class="grid-classes md:grid-cols-3">
+                @for (card of cards.slice(2, 8); track $index) {
+                    <div class="feature-card card-shadow rounded-xl">
+                        <sug-funnel-card
+                            [image]="card.imageurl"
+                            [title]="card.title"
+                            [desc]="card.description"
+                            [navigation_url]="card.navigation_url">
+                        </sug-funnel-card>
+                    </div>
+                }
+            </div>
+        </div>
+    </main>
+    <!-- Main Content / Funnel Card Section - ENDS -->
+</div>
+
+<!-- For bottom advertisment -->
+<sug-adverts></sug-adverts>
